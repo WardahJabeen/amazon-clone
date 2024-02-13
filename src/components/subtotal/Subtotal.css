@@ -10,12 +10,12 @@
     border-radius: 3px;
 }
 
-.gift {
+.subtotal__gift {
     display: flex;
     align-items: center;
 }
 
-.gift>input {
+.subtotal__gift>input {
     margin-right: 5px;
 }
 

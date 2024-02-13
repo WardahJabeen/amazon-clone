@@ -12,16 +12,7 @@
     z-index: 1;
 }
 
-.info {
-    height: 100px;
-    margin-bottom: 15px;
-}
-
-.price {
-    margin-top: 5px;
-}
-
-.rating {
+.product__rating {
     display: flex;
 }
 
@@ -35,8 +26,17 @@
 
 .product>button {
     margin-top: 10px;
-    background-color: #f0c14b;
+    background: #f0c14b;
     border: 1px solid;
     border-color: #a88734 #9c7e31 #856a29;
     color: #111;
+}
+
+.product__price {
+    margin-top: 5px;
+}
+
+.product__info {
+    height: 100px;
+    margin-bottom: 15px;
 }

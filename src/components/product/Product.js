@@ -21,13 +21,13 @@ const Product = ({ id, title, price, rating, image }) => {
 
     return (
         <div className='product'>
-            <div className='info'>
+            <div className='product__info'>
                 <p>{title}</p>
-                <p className='price'>
+                <p className='product__price'>
                     <small>$</small>
                     <strong>{price}</strong>
                 </p>
-                <div className='rating'>
+                <div className='product__rating'>
                     {Array(rating)
                         .fill()
                         .map((_) => (
@@ -36,7 +36,7 @@ const Product = ({ id, title, price, rating, image }) => {
                 </div>
             </div>
             <img src={image} alt="" />
-            <button onClick={addToBasket}>Add to button</button>
+            <button onClick={addToBasket}>Add to basket</button>
         </div>
     )
 }
