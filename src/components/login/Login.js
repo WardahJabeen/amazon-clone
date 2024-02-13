@@ -41,13 +41,13 @@ const Login = () => {
         <div className='login'>
             <Link to='/'>
                 <img
-                    className="logo"
+                    className="login__logo"
                     src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png'
                     alt=''
                 />
             </Link>
 
-            <div className='container'>
+            <div className='login__container'>
                 <h1>Sign in</h1>
                 <form>
                     <h5>E-mail</h5>
@@ -57,7 +57,7 @@ const Login = () => {
                     <input type='password' value={password} onChange={event => setPassword(event.target.value)} />
 
                     {/* <button type='submit' onClick={signIn} className='login-signInButton'>Sign In</button> */}
-                    <button type='submit' className='signInButton' onClick={login}>Sign In</button>
+                    <button type='submit' className='login__signInButton' onClick={login}>Sign In</button>
 
                 </form>
 
@@ -65,7 +65,7 @@ const Login = () => {
                     By signing-in you agree to the AMAZON FAKE CLONE Conditions of Use & Sale. Please
                     see our Privacy Notice, our Cookies Notice and our Interest-Based Ads Notice.
                 </p>
-                <button className='registerButton' onClick={register}>Create your Amazon Account</button>
+                <button className='login__registerButton' onClick={register}>Create your Amazon Account</button>
 
                 {/* <button onClick={register} className='login-registerButton'>Create your Amazon Account</button> */}
 

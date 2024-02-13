@@ -22,51 +22,51 @@ const Header = () => {
                 {/* logo */}
                 <Link to="/">
                     <img
-                        className='logo'
+                        className='header__logo'
                         src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
                         alt=""
                     />
                 </Link>
 
                 {/* search box */}
-                <div className='search'>
-                    <input type="text" className='searchInput' />
-                    <SearchOutlinedIcon className="searchIcon" />
+                <div className='header__search'>
+                    <input type="text" className='header__searchInput' />
+                    <SearchOutlinedIcon className="header__searchIcon" />
                 </div>
 
                 {/* links */}
-                <div className='nav'>
+                <div className='header__nav'>
                     {/* first link */}
-                    <Link to={!user && "/login"} className='link'>
-                        <div onClick={login} className='option'>
-                            <span className='optionLine1'>Hello {user?.email}</span>
-                            <span className='optionLine2'>{user ? "Sign Out" : "Sign In"}</span>
+                    <Link to={!user && "/login"} className='header__link'>
+                        <div onClick={login} className='header__option'>
+                            <span className='header__optionLine1'>Hello {user?.email}</span>
+                            <span className='header__optionLine2'>{user ? "Sign Out" : "Sign In"}</span>
                         </div>
                     </Link>
 
                     {/* second link */}
-                    <Link to="/" className='link'>
-                        <div className='option'>
-                            <span className='optionLine1'> Returns</span>
-                            <span className='optionLine2'>& Orders</span>
+                    <Link to="/" className='header__link'>
+                        <div className='header__option'>
+                            <span className='header__optionLine1'> Returns</span>
+                            <span className='header__optionLine2'>& Orders</span>
                         </div>
                     </Link>
 
                     {/* third link */}
-                    <Link to="/" className='link'>
-                        <div className='option'>
-                            <span className='optionLine1'>Your</span>
-                            <span className='optionLine2'>Prime</span>
+                    <Link to="/" className='header__link'>
+                        <div className='header__option'>
+                            <span className='header__optionLine1'>Your</span>
+                            <span className='header__optionLine2'>Prime</span>
                         </div>
                     </Link>
 
                     {/* basket icon with number */}
-                    <Link to="/checkout" className='link'>
-                        <div className='optionBasket'>
+                    <Link to="/checkout" className='header__link'>
+                        <div className='header__optionBasket'>
                             {/* icon */}
                             <ShoppingCartOutlinedIcon />
                             {/* number of items */}
-                            <span className='optionLine2 basketCount'>{basket?.length}</span>
+                            <span className='header__optionLine2 header__basketCount'>{basket?.length}</span>
                         </div>
                     </Link>
 

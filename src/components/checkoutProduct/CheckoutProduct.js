@@ -15,19 +15,19 @@ const CheckoutProduct = ({ id, title, rating, price, image }) => {
     return (
         <div className='checkoutProduct'>
             <img
-                className='image'
+                className='checkoutProduct__image'
                 src={image}
                 alt=""
             />
 
-            <div className='info'>
-                <p className='title'>{title}</p>
-                <p className='price'>
+            <div className='checkoutProduct__info'>
+                <p className='checkoutProduct__title'>{title}</p>
+                <p className='checkoutProduct__price'>
                     <small>$</small>
                     <strong>{price}</strong>
                 </p>
 
-                <div className='rating'>
+                <div className='checkoutProduct__rating'>
                     {Array(rating)
                         .fill()
                         .map((_, i) => (
