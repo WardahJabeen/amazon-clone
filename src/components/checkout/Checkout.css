@@ -5,6 +5,12 @@
     height: max-content;
 }
 
+@media screen and (max-width:512px) {
+    .checkout__body {
+        flex-direction: column-reverse;
+    }
+}
+
 .checkout__left {
     margin-right: 20px;
 }
