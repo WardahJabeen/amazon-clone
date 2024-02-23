@@ -2,6 +2,14 @@
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
+
+}
+
+@media screen and (max-width:512px) {
+    .home__body {
+        width: 100%;
+        overflow-x: scroll;
+    }
 }
 
 .home__row {
